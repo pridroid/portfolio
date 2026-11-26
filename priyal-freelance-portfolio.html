@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Priyal Kalal – Freelance Frontend, WordPress & Shopify Developer in Dubai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#d9ccff;--ink:#1a1033;--pink:#ff4fa3;--lemon:#ffe14d;--mint:#3ddc97;--card:#fff;--on-pink:#1a1033;
+--d:'Bricolage Grotesque','Arial Black',Impact,sans-serif;--b:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1033;--ink:#f4eeff;--card:#2a1c4d}}
+:root[data-theme="dark"]{--bg:#1a1033;--ink:#f4eeff;--card:#2a1c4d}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--b);overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:3px solid var(--ink)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font:800 20px var(--d);text-decoration:none}
+.btn{display:inline-block;background:var(--pink);color:var(--on-pink);font:700 16px var(--b);padding:12px 20px;border:3px solid var(--ink);border-radius:999px;box-shadow:4px 4px 0 var(--ink);text-decoration:none;cursor:pointer;transition:transform .12s,box-shadow .12s}
+.btn:hover,.btn:focus-visible{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn.sm{padding:6px 16px;font-size:15px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.hero{padding:44px 0 36px}
+h1{font:800 clamp(42px,11vw,104px)/.95 var(--d);letter-spacing:-.03em;margin:0 0 22px}
+h1 span{display:inline-block;background:var(--lemon);color:#1a1033;padding:0 .15em;border:3px solid var(--ink);border-radius:14px;transform:rotate(-2deg)}
+h1 em{font-style:normal;display:inline-block;background:var(--mint);color:#1a1033;padding:0 .15em;border:3px solid var(--ink);border-radius:14px;transform:rotate(1.5deg)}
+.lead{max-width:560px;font-size:19px}
+.stickers{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+.st{font:700 15px var(--b);padding:8px 14px;border:3px solid var(--ink);border-radius:12px;background:var(--card);animation:wig 3.2s ease-in-out infinite}
+.st:nth-child(1){transform:rotate(-4deg);background:var(--lemon);color:#1a1033}
+.st:nth-child(2){transform:rotate(3deg);animation-delay:-1s}
+.st:nth-child(3){transform:rotate(-2deg);background:var(--mint);color:#1a1033;animation-delay:-2s}
+.st:nth-child(4){transform:rotate(4deg);background:var(--pink);color:#1a1033;animation-delay:-.5s}
+@keyframes wig{50%{translate:0 -6px}}
+.tick{background:var(--ink);color:var(--bg);border-block:3px solid var(--ink);overflow:hidden;white-space:nowrap;font:800 22px/1 var(--d);padding:14px 0}
+.tick div{display:inline-block;animation:go 22s linear infinite}
+@keyframes go{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tick div,.st{animation:none}.tick{overflow-x:auto}}
+section{padding:56px 0}
+h2{font:800 clamp(32px,7vw,56px)/1 var(--d);letter-spacing:-.02em;margin:0 0 10px}
+.sub{margin:0 0 28px;max-width:560px}
+.grid{display:grid;gap:22px}
+@media (min-width:760px){.grid.three{grid-template-columns:repeat(3,1fr)}.grid.two{grid-template-columns:1fr 1fr}}
+.blk{border:3px solid var(--ink);border-radius:22px;padding:24px;box-shadow:6px 6px 0 var(--ink);color:#1a1033}
+.blk h3{font:800 26px/1.1 var(--d);margin:0 0 8px}
+.blk p{margin:0}
+.blk.a{background:var(--lemon);transform:rotate(-1deg)}
+.blk.b{background:var(--mint);transform:rotate(1deg)}
+.blk.c{background:var(--pink);transform:rotate(-.5deg)}
+.pj{background:var(--card);border:3px solid var(--ink);border-radius:22px;overflow:hidden;box-shadow:6px 6px 0 var(--ink)}
+.pj .shot{height:120px;border-bottom:3px solid var(--ink);display:flex;align-items:center;justify-content:center;font:800 40px var(--d);color:#1a1033}
+.pj div.t{padding:18px 20px 22px}
+.pj h3{font:800 22px/1.15 var(--d);margin:0 0 6px}
+.pj p{margin:0 0 10px;font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags b{font:500 13px var(--b);border:2px solid var(--ink);border-radius:999px;padding:1px 10px}
+.owner{background:var(--ink);color:var(--bg);border-radius:28px;padding:30px 24px;margin:0 -4px}
+.owner h2{color:var(--lemon)}
+.owner ul{margin:0;padding-left:20px}
+.owner li{margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}
+.chip{font:700 16px var(--b);background:var(--card);color:var(--ink);border:3px solid var(--ink);border-radius:999px;padding:10px 18px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--mint);color:#1a1033;box-shadow:3px 3px 0 var(--ink)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.steps li{counter-increment:s;background:var(--card);border:3px solid var(--ink);border-radius:16px;padding:16px 18px 16px 62px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--pink);color:#1a1033;border:3px solid var(--ink);font:800 18px/28px var(--d);text-align:center}
+footer{padding:36px 0 48px;border-top:3px solid var(--ink)}
+footer a{font-weight:700}
+.links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:10px}
+body{background-image:radial-gradient(color-mix(in srgb,var(--ink) 14%,transparent) 1.5px,transparent 1.6px);background-size:22px 22px}
+.hero{position:relative}
+.hero>*{position:relative;z-index:1}
+.hero>.fl{position:absolute;z-index:0;pointer-events:none}
+.burst{right:12px;bottom:16px;width:104px;height:104px;display:grid;place-items:center}
+.burst svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 14s linear infinite}
+.burst polygon{fill:var(--lemon);stroke:var(--ink);stroke-width:2.5;stroke-linejoin:round}
+.burst b{position:relative;font:800 14px/1.1 var(--d);text-align:center;color:#1a1033;transform:rotate(-8deg)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sp{width:34px;height:34px;fill:var(--pink);stroke:var(--ink);stroke-width:1.5;animation:wig 4s ease-in-out infinite}
+.sp.s1{top:8px;right:18%;width:44px;height:44px}
+.sp.s2{top:46%;right:4%;fill:var(--mint);animation-delay:-1.5s}
+.sp.s3{bottom:26%;left:62%;fill:var(--lemon);animation-delay:-2.5s;width:26px;height:26px}
+.tick.r{background:var(--pink);color:#1a1033;border-top:0}
+.tick.r div{animation-direction:reverse}
+.blk,.pj{transition:transform .2s}
+@media (hover:hover){.blk.a:hover,.blk.b:hover,.blk.c:hover,.pj:hover{transform:rotate(2deg) translateY(-4px)}h1 span:hover{transform:rotate(2deg) scale(1.04)}}
+h1 span,h1 em{transition:transform .2s}
+@media (prefers-reduced-motion:reduce){.burst svg,.sp{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">Priyal Kalal</a><a class="btn sm" href="#hire">Hire me</a></div></header>
+
+<main id="top">
+<div class="wrap hero">
+<svg class="fl sp s1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>
+<svg class="fl sp s2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>
+<svg class="fl sp s3" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>
+<div class="fl burst" aria-hidden="true"><svg viewBox="0 0 100 100"><polygon points="100,50 85.1,64.5 85.4,85.4 64.5,85.1 50,100 35.5,85.1 14.6,85.4 14.9,64.5 0,50 14.9,35.5 14.6,14.6 35.5,14.9 50,0 64.5,14.9 85.4,14.6 85.1,35.5"/></svg><b>Open for projects</b></div>
+<h1>Websites that don’t look like <span>everyone’s</span> website.</h1>
+<p class="lead">I’m Priyal, a freelance frontend, WordPress and Shopify developer in Dubai. I build fast, phone-first sites and stores on the platform that suits your business, and I plug them into the systems you already run, like Odoo.</p>
+<div class="stickers"><span class="st">React</span><span class="st">Shopify</span><span class="st">WordPress</span><span class="st">Odoo-ready</span><span class="st">Webflow &amp; Wix</span><span class="st">Mobile-first</span></div>
+<a class="btn" href="#hire">Tell me about your project</a>
+</div>
+
+<div class="tick" aria-hidden="true"><div>React ✦ Shopify ✦ WordPress ✦ WooCommerce ✦ Elementor ✦ Webflow ✦ Wix ✦ Squarespace ✦ Odoo Website ✦ Tailwind ✦ Landing pages ✦ Redesigns ✦ React ✦ Shopify ✦ WordPress ✦ WooCommerce ✦ Elementor ✦ Webflow ✦ Wix ✦ Squarespace ✦ Odoo Website ✦ Tailwind ✦ Landing pages ✦ Redesigns ✦ </div></div>
+<div class="tick r" aria-hidden="true"><div>Say hello ✦ Dubai based ✦ Open for projects ✦ Mobile-first ✦ Fast delivery ✦ Say hello ✦ Dubai based ✦ Open for projects ✦ Mobile-first ✦ Fast delivery ✦ Say hello ✦ Dubai based ✦ Open for projects ✦ Mobile-first ✦ Fast delivery ✦ Say hello ✦ Dubai based ✦ Open for projects ✦ Mobile-first ✦ Fast delivery ✦ </div></div>
+
+<section><div class="wrap">
+<h2>What I build for you</h2>
+<p class="sub">Three things, done properly, on whichever platform fits. If you need something in between, ask.</p>
+<div class="grid three">
+<div class="blk a"><h3>Company websites</h3><p>Custom sites in WordPress (Elementor or custom themes), Webflow, Wix, Squarespace, Odoo Website or hand-coded React. Quick to load, easy on a phone, and simple for your team to update.</p></div>
+<div class="blk b"><h3>Online stores</h3><p>Shopify and WooCommerce stores: theme customisation, product pages that sell, checkout-friendly layouts, and fixes for what your current store can’t do.</p></div>
+<div class="blk c"><h3>Dashboards and portals</h3><p>React interfaces for CRMs, client portals and internal tools, connected to your APIs, Odoo or whatever you run on.</p></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>Things I’ve built</h2>
+<p class="sub">Selected work. Details and code are on my GitHub.</p>
+<div class="grid two">
+<div class="pj"><div class="shot" style="background:var(--lemon)">CRM</div><div class="t"><h3>CRM and workflow platform</h3><p>Customer lifecycle, lead tracking and reporting for 50+ active accounts, with automated follow-ups.</p><div class="tags"><b>React</b><b>FastAPI</b><b>PostgreSQL</b></div></div></div>
+<div class="pj"><div class="shot" style="background:var(--mint)">AI</div><div class="t"><h3>Knowledge assistant</h3><p>A chat interface that answers staff questions from company documents using retrieval-augmented generation.</p><div class="tags"><b>LangChain</b><b>OpenAI</b><b>FastAPI</b></div></div></div>
+<div class="pj"><div class="shot" style="background:var(--pink)">HR</div><div class="t"><h3>AI recruitment platform</h3><p>Resume parsing, job matching and candidate ranking behind a clean, fast interface.</p><div class="tags"><b>Python</b><b>OpenAI API</b><b>PostgreSQL</b></div></div></div>
+<div class="pj"><div class="shot" style="background:#9be7ff">ops</div><div class="t"><h3>Infrastructure monitoring</h3><p>Live health views for Kubernetes clusters, with AI-assisted diagnostics to speed up troubleshooting.</p><div class="tags"><b>AKS</b><b>Prometheus</b><b>Grafana</b></div></div></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="owner">
+<h2>Why a business owner would hire me</h2>
+<ul>
+<li>I work day to day with real estate and oil and gas clients, so I know how they talk and what they expect from a site.</li>
+<li>I manage Odoo and frontend projects, so I understand deadlines and scope as well as code.</li>
+<li>I work across WordPress, Shopify, Webflow, Wix and custom React, so I recommend what fits your budget instead of what I happen to know.</li>
+<li>I also write backend, deploy to the cloud and set up CI/CD, so you don’t need three freelancers.</li>
+<li>I answer fast and tell you early if something will take longer.</li>
+</ul>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>How we’d work</h2>
+<p class="sub">Simple, and no surprises.</p>
+<ol class="steps">
+<li><b>Quick call.</b> You tell me what you need and what success looks like.</li>
+<li><b>Fixed plan.</b> I send scope, timeline and cost before I start.</li>
+<li><b>Build in the open.</b> You see a working preview every few days.</li>
+<li><b>Launch and support.</b> I deploy it, hand it over and stay available for fixes.</li>
+</ol>
+</div></section>
+
+<section id="hire" style="padding-top:0"><div class="wrap">
+<h2>Let’s build yours</h2>
+<p class="sub">Pick what you need, then send the brief by email or WhatsApp.</p>
+<div class="chips" id="chips" role="group" aria-label="Project type">
+<button class="chip" aria-pressed="false">Company website</button>
+<button class="chip" aria-pressed="false">Shopify store</button>
+<button class="chip" aria-pressed="false">WordPress site</button>
+<button class="chip" aria-pressed="false">WooCommerce store</button>
+<button class="chip" aria-pressed="false">Webflow or Wix</button>
+<button class="chip" aria-pressed="false">Dashboard or portal</button>
+<button class="chip" aria-pressed="false">Odoo frontend</button>
+<button class="chip" aria-pressed="false">Redesign</button>
+</div>
+<a class="btn" id="mail" href="mailto:priyalkalaldev@gmail.com">Email my brief</a>
+<a class="btn" id="wa" href="https://wa.me/971525387321" style="background:var(--mint)">WhatsApp me</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<b>Priyal D Kalal</b>, freelance developer, Dubai, UAE
+<div class="links"><a href="https://github.com/pridroid">GitHub</a><a href="https://linkedin.com/in/priyal-kalal-307900250">LinkedIn</a><a href="mailto:priyalkalaldev@gmail.com">priyalkalaldev@gmail.com</a><a href="tel:+971525387321">+971 52 538 7321</a></div>
+</div></footer>
+
+<script>
+(function(){
+var chips=document.querySelectorAll('.chip'),mail=document.getElementById('mail'),wa=document.getElementById('wa');
+function update(){
+var picked=[].filter.call(chips,function(c){return c.getAttribute('aria-pressed')==='true'}).map(function(c){return c.textContent});
+var what=picked.length?picked.join(', '):'a project';
+var msg='Hi Priyal, I’d like to talk about '+what+' for my company. Here is what we need: ';
+mail.href='mailto:priyalkalaldev@gmail.com?subject='+encodeURIComponent('Project enquiry: '+what)+'&body='+encodeURIComponent(msg);
+wa.href='https://wa.me/971525387321?text='+encodeURIComponent(msg);
+}
+chips.forEach(function(c){c.addEventListener('click',function(){c.setAttribute('aria-pressed',c.getAttribute('aria-pressed')==='true'?'false':'true');update()})});
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches,cols=['#ff4fa3','#ffe14d','#3ddc97','#9be7ff'];
+function burst(x,y){for(var i=0;i<8;i++){(function(i){var s=document.createElement('span'),a=Math.random()*6.28,d=40+Math.random()*60;
+s.textContent='✦';s.setAttribute('aria-hidden','true');
+s.style.cssText='position:fixed;left:'+x+'px;top:'+y+'px;pointer-events:none;z-index:99;font-size:'+(16+Math.random()*16)+'px;color:'+cols[i%4]+';-webkit-text-stroke:1px #1a1033';
+document.body.appendChild(s);
+var an=s.animate([{transform:'translate(-50%,-50%) scale(1)',opacity:1},{transform:'translate(calc(-50% + '+Math.cos(a)*d+'px),calc(-50% + '+Math.sin(a)*d+'px)) scale(.2) rotate(200deg)',opacity:0}],{duration:750,easing:'ease-out'});
+an.onfinish=function(){s.remove()}})(i)}}
+if(!rm)document.addEventListener('pointerdown',function(e){burst(e.clientX,e.clientY)});
+})();
+</script>
+</body>
+</html>
